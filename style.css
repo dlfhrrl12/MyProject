@@ -1,0 +1,133 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header{
+  width: 100%;
+  background-color: #272727;
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.movie-search{
+  width: 60%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.book-btn{
+  margin-bottom: 20px;
+  background-color: #272727;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.book-btn:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: white;
+  color: #272727;
+}
+
+.cardList{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.movieCard{
+  border: 1px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.movieImage{
+  width: 100%;
+  
+}
+
+.modal{
+  display: none; /* Card 를 누르지 않으면 none 상태*/
+  background-color: rgba(0, 0, 0, 0.7); /* 팝업 배경 레이어*/
+  width: 100%; /* 화면전체*/
+  height: 100%; /* 화면전체*/
+  left: 0;
+  top: 0;
+  position: fixed; /*화면 고정*/
+}
+
+.modal-content{
+  padding: 15px;
+  background-color: white;
+  width: 80%;
+  position: absolute;
+  top: 50%; /* 화면 중앙 */
+  left: 50%; /* 화면 중앙 */
+  transform: translate(-50%, -50%); /* 화면 중앙 */
+  overflow-y: auto; /* 스크롤 */
+  max-width: 600px;
+  max-height: 90vh;
+  border-radius: 5px;
+}
+
+.close-btn{
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.book-add-btn{
+  width: 80%;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: #272727;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+}
+
+.book-add-btn:hover{
+  background-color: white;
+  color: #272727;
+  transition: 0.3s;
+  border: 1px solid #272727;
+}
+
+.modal-title{
+  text-align: left;
+  font-weight: bold;
+}
+
+.modal-view{
+  text-align: left;
+}
+
+.modal-date{
+  text-align: left;
+  font-weight: bold;
+}
+
+.modal-average{
+  text-align: left;
+  font-weight: bold;
+}
